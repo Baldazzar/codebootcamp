@@ -48,10 +48,10 @@ def coins(coffee_chosen):
                 return False
             else:
                 print("Please insert coins. ")
-                quarters = int(input("How many quarters?: "))
-                dimes = int(input("How many dimes?: "))
-                nickles = int(input("How many nickles?: "))
-                pennies = int(input("How many pennies?: "))
+                quarters = int(input("How many quarters? (0.25$): "))
+                dimes = int(input("How many dimes? (0.10$): "))
+                nickles = int(input("How many nickles? (0.05$): "))
+                pennies = int(input("How many pennies? (0.01$): "))
                 Total_cash = round(float((quarters * 0.25) + (dimes * 0.10) + (nickles * 0.05) + (pennies * 0.01)), 2)
                 cash_required = MENU[coffee_chosen]["cost"]
                 if Total_cash > cash_required:
